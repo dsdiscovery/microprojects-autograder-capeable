@@ -1,6 +1,13 @@
 {
   "tests": [
     {
+      "name": "Puzzle 0.1 Autograding",
+      "run": "pytest -k '_0_1'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 0
+    },
+    {
       "name": "Puzzle 1.1 Autograding",
       "run": "pytest -k '_1_1'",
       "comparison": "included",
