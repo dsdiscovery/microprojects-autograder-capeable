@@ -4,35 +4,35 @@
       "name": "Puzzle 1.1 Autograding",
       "run": "pytest -k '_1_1'",
       "comparison": "included",
-      "timeout": .5,
+      "timeout": 0.5,
       "points": 12.5
     }, 
     {
       "name": "Puzzle 1.2 Autograding",
       "run": "pytest -k '_1_2'",
       "comparison": "included",
-      "timeout": .5,
+      "timeout": 0.5,
       "points": 12.5
     },
     {
       "name": "Puzzle 2.1 Autograding",
       "run": "pytest -k '_2_1'",
       "comparison": "included",
-      "timeout": .5,
+      "timeout": 0.5,
       "points": 25
     },
     {
       "name": "Puzzle 3.1 Autograding",
       "run": "pytest -k '_3_1'",
       "comparison": "included",
-      "timeout": .5,
+      "timeout": 0.5,
       "points": 25
     },
     {
       "name": "Puzzle 4.1 Autograding",
       "run": "pytest -k '_4_1'",
       "comparison": "included",
-      "timeout": .5,
+      "timeout": 0.5,
       "points": 25
     }
   ]
