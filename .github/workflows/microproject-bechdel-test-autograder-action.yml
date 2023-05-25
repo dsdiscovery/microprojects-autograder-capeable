@@ -17,6 +17,24 @@ jobs:
         cache: pip
         cache-dependency-path: microproject-bechdel-test/requirements.txt
     - run: pip install -r microproject-bechdel-test/requirements.txt
+    - name: Checkout release
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/microprojects-autograder-capeable
+        ref: microproject-bechdel-test
+        path: release
+    - name: Fetch Jupyter Notebook Autograder Script 
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/jupyter-notebook-autograder
+        path: autograder
+    - run: python3 -m pip install -r autograder/requirements.txt
+    - run: >
+        python3 autograder/generate_compiled_testcases.py
+        microproject-bechdel-test/microproject-video-frame-scene-recognition-model.ipynb
+        release/microproject-bechdel-test/microproject-video-frame-scene-recognition-model.ipynb
+        microproject-bechdel-test/test_microproject-video-frame-scene-recognition-model.py
+    - run: python3 -m pip install pytest
     - name: Autograding
       id: autograding
       uses: illinois/autograding@v3
@@ -24,6 +42,8 @@ jobs:
         path: microproject-bechdel-test/
         test_suite: autograding
         step_summary: true
+        all_or_nothing: true
+    - run: rm microproject-bechdel-test/test_microproject-video-frame-scene-recognition-model.py
     - name: Generate workflow summary
       if: ${{ always() }}
       run: echo -e "$(sh ./.github/workflows/gen-status-report.sh)" >> $GITHUB_STEP_SUMMARY
