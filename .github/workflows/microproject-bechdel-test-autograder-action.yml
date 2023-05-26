@@ -27,7 +27,7 @@ jobs:
     - name: Install Extractor and Pytest
       run: pip install jupyter2pytest pytest
     - name: Generate Test Script
-      run: 'python3 -m jupyter2pytest microproject-bechdel-test/microproject-bechdel-test.ipynb "### ASSIGNMENT CODE for Puzzle (.*) ==" release/microproject-bechdel-test/microproject-bechdel-test.ipynb "### TEST CASE for Puzzle (.*) ==" test_microproject-bechdel-test.py '
+      run: 'python3 -m jupyter2pytest microproject-bechdel-test/microproject-bechdel-test.ipynb "### ASSIGNMENT CODE for Puzzle (.*) ==" release/microproject-bechdel-test/microproject-bechdel-test.ipynb "### TEST CASE for Puzzle (.*) ==" microproject-bechdel-test/test_microproject-bechdel-test.py '
     - name: Download cell-replace
       uses: actions/checkout@v3
       with:
