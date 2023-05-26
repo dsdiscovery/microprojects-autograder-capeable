@@ -27,7 +27,12 @@ jobs:
     - name: Install Extractor
       run: pip install jupyter2pytest
     - name: Generate Test Script
-      run: 'python3 -m jupyter2pytest microproject-bechdel-test.ipynb "### ASSIGNMENT CODE for Puzzle (.*) ==" release/microproject-bechdel-test/microproject-bechdel-test.ipynb "### TEST CASE for Puzzle (.*) ==" test_microproject-bechdel-test.py '
+      run: 'python3 -m jupyter2pytest microproject-bechdel-test/microproject-bechdel-test.ipynb "### ASSIGNMENT CODE for Puzzle (.*) ==" release/microproject-bechdel-test/microproject-bechdel-test.ipynb "### TEST CASE for Puzzle (.*) ==" test_microproject-bechdel-test.py '
+    - name: Download cell-replace
+      uses: actions/checkout@v3
+      with:
+        repo: dsdiscovery/cell-replace
+        path: microproject-bechdel-test/cell-replace
     - name: Autograding
       id: autograding
       uses: illinois/autograding@v3
