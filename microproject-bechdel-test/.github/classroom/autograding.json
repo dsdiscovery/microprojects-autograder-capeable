@@ -1,39 +1,44 @@
 {
   "tests": [
     {
-      "name": "Puzzle 1.3 Autograding",
-      "run": "pytest -k '_1_3'",
+      "name": "microproject-bechdel-test - _1_3",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test__1_3",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 16.66
+      "points": 1
     },
     {
-      "name": "Puzzle 1.4 Autograding",
-      "run": "pytest -k '_1_4'",
+      "name": "microproject-bechdel-test - _1_4",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test__1_4",
       "comparison": "included",
-      "timeout": 0.5,
-      "points": 16.66
+      "timeout": 0.1,
+      "points": 1
     },
     {
-      "name": "Puzzle 1.5 Autograding",
-      "run": "pytest -k '_1_5'",
+      "name": "microproject-bechdel-test - _1_5",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test__1_5",
       "comparison": "included",
-      "timeout": 0.5,
-      "points": 16.68
+      "timeout": 0.1,
+      "points": 1
     },
     {
-      "name": "Puzzle 2.1 Autograding",
-      "run": "pytest -k '_2_1'",
+      "name": "microproject-bechdel-test - _2_1",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test__2_1",
       "comparison": "included",
-      "timeout": 0.5,
-      "points": 25
+      "timeout": 0.1,
+      "points": 1
     },
     {
-      "name": "Puzzle 2.2 Autograding",
-      "run": "pytest -k '_2_2'",
+      "name": "microproject-bechdel-test - _2_2",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test__2_2",
       "comparison": "included",
-      "timeout": 0.5,
-      "points": 25
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
