@@ -3,7 +3,7 @@
     {
       "name": "microproject-bechdel-test - _1_3",
       "setup": "",
-      "run": "pytest test_microproject-bechdel-test.py::test__1_3",
+      "run": "pytest test_microproject-bechdel-test.py -k _1_3",
       "comparison": "included",
       "timeout": 0.5,
       "points": 1
@@ -11,7 +11,7 @@
     {
       "name": "microproject-bechdel-test - _1_4",
       "setup": "",
-      "run": "pytest test_microproject-bechdel-test.py::test__1_4",
+      "run": "pytest test_microproject-bechdel-test.py -k _1_4",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
@@ -19,7 +19,7 @@
     {
       "name": "microproject-bechdel-test - _1_5",
       "setup": "",
-      "run": "pytest test_microproject-bechdel-test.py::test__1_5",
+      "run": "pytest test_microproject-bechdel-test.py -k _1_5",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
@@ -27,7 +27,7 @@
     {
       "name": "microproject-bechdel-test - _2_1",
       "setup": "",
-      "run": "pytest test_microproject-bechdel-test.py::test__2_1",
+      "run": "pytest test_microproject-bechdel-test.py -k _2_1",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
@@ -35,7 +35,7 @@
     {
       "name": "microproject-bechdel-test - _2_2",
       "setup": "",
-      "run": "pytest test_microproject-bechdel-test.py::test__2_2",
+      "run": "pytest test_microproject-bechdel-test.py -k _2_2",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
